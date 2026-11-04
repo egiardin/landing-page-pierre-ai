@@ -2535,3 +2535,162 @@ button:disabled { opacity:.6; cursor:wait; }
 @media(max-width:600px) { .pierre-pricing{grid-template-columns:1fr;} .pierre-pricing .price-card{padding:25px;} .hero-facts{flex-wrap:wrap;} .origin-options{flex-wrap:wrap;} .origin-options label{min-width:130px;} }
 /* Accent principal toujours vert sapin, y compris les grands titres. */
 h1 span,h2 span { color:var(--forest); }
+
+
+
+/* =========================================
+   POURQUOI PIERRE — BLOC INVISIBLE
+========================================= */
+
+.why-pierre {
+  padding: 65px 0 75px;
+}
+
+.why-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.why-heading h2 {
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.why-heading h2 span {
+  color: var(--forest);
+}
+
+.why-heading p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Les quatre arguments forment un ensemble */
+
+.why-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+  text-align: center;
+}
+
+/* Aucun fond, aucune carte, aucune bordure */
+
+.why-stat {
+  min-width: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0 8px;
+}
+
+.why-stat strong {
+  display: block;
+  color: var(--forest);
+  font-size: clamp(27px, 3vw, 43px);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.why-stat h3 {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+.why-stat p {
+  margin: 9px auto 0;
+  max-width: 220px;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.why-disclaimer {
+  margin: 36px auto 0;
+  max-width: 850px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+/* =========================================
+   TABLETTE
+========================================= */
+
+@media (max-width: 820px) {
+  .why-stats {
+    gap: 15px;
+  }
+
+  .why-stat {
+    padding: 0 3px;
+  }
+
+  .why-stat strong {
+    font-size: clamp(20px, 3.2vw, 30px);
+  }
+
+  .why-stat h3 {
+    font-size: 13px;
+  }
+
+  .why-stat p {
+    font-size: 11px;
+  }
+}
+
+/* =========================================
+   MOBILE — 2 COLONNES, 2 LIGNES
+========================================= */
+
+@media (max-width: 560px) {
+  .why-pierre {
+    padding: 48px 0 55px;
+  }
+
+  .why-heading {
+    margin-bottom: 34px;
+  }
+
+  .why-heading h2 {
+    font-size: 34px;
+  }
+
+  .why-heading p {
+    font-size: 12px;
+    padding: 0 12px;
+  }
+
+  .why-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 34px 16px;
+  }
+
+  .why-stat strong {
+    font-size: clamp(24px, 7vw, 32px);
+  }
+
+  .why-stat h3 {
+    margin-top: 9px;
+    font-size: 13px;
+  }
+
+  .why-stat p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .why-disclaimer {
+    margin-top: 30px;
+    font-size: 9px;
+  }
+}
+
