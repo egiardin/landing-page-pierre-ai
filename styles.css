@@ -2694,3 +2694,30 @@ h1 span,h2 span { color:var(--forest); }
   }
 }
 
+
+/* Réduire l'espace entre Pourquoi Pierre et les offres */
+
+.why-pierre {
+  padding-bottom: 25px;
+}
+
+.why-disclaimer {
+  margin-bottom: 0;
+}
+
+.section.offers {
+  padding-top: 35px;
+}
+
+/* Version téléphone */
+@media (max-width: 560px) {
+  .why-pierre {
+    padding-bottom: 20px;
+  }
+
+  .section.offers {
+    padding-top: 30px;
+  }
+}
+
+
