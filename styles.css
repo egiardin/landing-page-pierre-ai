@@ -2741,3 +2741,6 @@ h1 span,h2 span { color:var(--forest); }
   }
 }
 
+.hero h1 {
+  line-height: 1.02;
+}
