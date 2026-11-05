@@ -2720,4 +2720,24 @@ h1 span,h2 span { color:var(--forest); }
   }
 }
 
+/* Rapprocher le petit titre du grand titre */
+
+.hero-copy .eyebrow {
+  margin-bottom: 8px;
+}
+
+.hero {
+  padding-top: 35px;
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .hero {
+    padding-top: 20px;
+  }
+
+  .hero-copy .eyebrow {
+    margin-bottom: 6px;
+  }
+}
 
